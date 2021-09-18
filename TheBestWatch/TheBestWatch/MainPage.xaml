@@ -8,11 +8,12 @@
 
     <Frame HeightRequest="300"
            WidthRequest="300"
-           Padding="0"
-           BackgroundColor="Aquamarine">
+           Padding="0">
         <Grid Padding="0">
-            <Label x:Name="TimeLabel" Text="{Binding Time}"/>
-            <Ellipse Stroke="Red"
+            <Label x:Name="TimeLabel" 
+                   Text="{Binding Time}"
+                   HorizontalOptions="Center"/>
+            <Ellipse Stroke="Pink"
                      WidthRequest="300"
                      HeightRequest="300"
                      HorizontalOptions="Center"
@@ -20,7 +21,7 @@
             />
             <Line Y1="150" 
                   X2="0"
-                  Y2="300"
+                  Y2="295"
                   Stroke="Red" 
                   HorizontalOptions="Center"
                   VerticalOptions="Center"
@@ -47,6 +48,26 @@
                   x:Name="MinuteLine"
                   StrokeThickness="5"
                   IsVisible="True"/>
+
+            <Label Text="12"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="0, -315, 0,0"/>
+
+            <Label Text="3"
+                   VerticalOptions="Center"
+                   HorizontalOptions="End"
+                   Margin="0, 0, 10,0"/>
+
+            <Label Text="6"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   Margin="0, 315, 0,0"/>
+
+            <Label Text="9"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   Margin="10, 0, 0,0"/>
         </Grid>
     </Frame>
 </ContentPage>
